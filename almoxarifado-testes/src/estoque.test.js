@@ -29,3 +29,12 @@ test('bloqueia quantidade zero ou negativa', () => {
   expect(podeRetirar(furadeira, 0)).toBe(false);
   expect(podeRetirar(furadeira, -2)).toBe(false);
 });
+
+test('recusa item com status inválido', () => {
+    const item = {
+        status: 'inexistente',
+        quantidade: 10
+    };
+
+    expect(podeRetirar(item, 2)).toBe(false);
+});

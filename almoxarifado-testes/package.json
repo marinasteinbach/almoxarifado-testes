@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "test": "jest",
-  "cobertura": "jest --coverage"
-},
+    "test": "jest",
+    "cobertura": "jest --coverage"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
